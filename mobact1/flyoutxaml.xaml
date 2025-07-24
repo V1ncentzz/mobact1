@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobact1.flyoutxaml"
+             Title="flyoutxaml">
+
+    <FlyoutPage.Flyout>
+        <ContentPage Title="ContentHome">
+            <VerticalStackLayout>
+                <Label Text="Home"
+                    HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     FontSize="20"
+                     FontAttributes="Bold"/>
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    
+    <FlyoutPage.Detail>
+        <TabbedPage>
+            <ContentPage Title="Tab 1">
+                <VerticalStackLayout>
+                    <Label Text="This is tab 1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="40"
+                        FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </ContentPage>
+
+            <ContentPage Title="Tab 2">
+                <VerticalStackLayout>
+                    <Label Text="This is tab 2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="40"
+                        FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </ContentPage>
+
+            <ContentPage Title="Tab 3">
+                <VerticalStackLayout>
+                    <Label Text="This is tab 3"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="40"
+                        FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </ContentPage>
+        </TabbedPage>
+    </FlyoutPage.Detail>
+    
+</FlyoutPage>
