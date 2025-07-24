@@ -4,50 +4,93 @@
              x:Class="mobact1.flyoutxaml"
              Title="flyoutxaml">
 
+    <!-- Flyout Menu -->
     <FlyoutPage.Flyout>
-        <ContentPage Title="ContentHome">
+        <ContentPage Title="Navigation">
             <VerticalStackLayout>
-                <Label Text="Home"
-                    HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     FontSize="20"
-                     FontAttributes="Bold"/>
+                <Label Text="Menu"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="20"
+                       FontAttributes="Bold"/>
             </VerticalStackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
-    
+
+    <!-- Detail with Tabs -->
     <FlyoutPage.Detail>
         <TabbedPage>
-            <ContentPage Title="Tab 1">
+            <ContentPage Title="Home">
                 <VerticalStackLayout>
-                    <Label Text="This is tab 1"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="40"
-                        FontAttributes="Bold"/>
+                    <Image Source="home.png"
+                           HeightRequest="150"
+                           Aspect="AspectFill"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Label Text=".NET MAUI"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     FontSize="40"
+                     FontAttributes="Bold"
+                     TextColor="DarkViolet"/>
+
+                    <Label Text="This application is made by .net maui"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"/>
+                    
                 </VerticalStackLayout>
             </ContentPage>
 
-            <ContentPage Title="Tab 2">
-                <VerticalStackLayout>
-                    <Label Text="This is tab 2"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="40"
-                        FontAttributes="Bold"/>
+            <ContentPage Title="Profile">
+                <VerticalStackLayout BackgroundColor="AliceBlue">
+                    <Image Source="profile.png"
+                    HeightRequest="200"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+                    <Label Text="Vincent Rupita"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"/>
+
+                    <Label Text="23-9005199"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"/>
+
+                    <Label Text="BSIT"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    TextColor="Black"/>
                 </VerticalStackLayout>
             </ContentPage>
 
-            <ContentPage Title="Tab 3">
+            <ContentPage Title="About">
                 <VerticalStackLayout>
-                    <Label Text="This is tab 3"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="40"
-                        FontAttributes="Bold"/>
+                    <Label Text="FIRST ACTIVITY IN MOBAPPLICATION"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="35"
+                    TextColor="Black"/>
+
+                    <Label Text="Contains Different set of pages in .NET MAUI"
+                    HorizontalTextAlignment="Center"
+                    FontSize="25"
+                    TextColor="Black"/>
                 </VerticalStackLayout>
             </ContentPage>
         </TabbedPage>
     </FlyoutPage.Detail>
-    
+
 </FlyoutPage>
