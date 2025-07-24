@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
+ <!--Flyout Page-->
 <FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobact1.flyoutxaml"
              Title="flyoutxaml">
 
-    <!-- Flyout Menu -->
+    <!-- FlyoutPage.Flyout - The side bar -->
     <FlyoutPage.Flyout>
+        <!--Content page represent the content of the flyoutpage-->
         <ContentPage Title="Navigation">
             <VerticalStackLayout>
                 <Label Text="Menu"
@@ -20,6 +22,7 @@
     <!-- Detail with Tabs -->
     <FlyoutPage.Detail>
         <TabbedPage>
+            <!--First tab-->
             <ContentPage Title="Home">
                 <VerticalStackLayout>
                     <Image Source="home.png"
@@ -39,10 +42,10 @@
                     VerticalOptions="Center"
                     FontSize="20"
                     TextColor="Black"/>
-                    
+
                 </VerticalStackLayout>
             </ContentPage>
-
+            <!--Second Tab-->
             <ContentPage Title="Profile">
                 <VerticalStackLayout BackgroundColor="AliceBlue">
                     <Image Source="profile.png"
@@ -73,7 +76,7 @@
                     TextColor="Black"/>
                 </VerticalStackLayout>
             </ContentPage>
-
+            <!--Third Tab-->
             <ContentPage Title="About">
                 <VerticalStackLayout>
                     <Label Text="FIRST ACTIVITY IN MOBAPPLICATION"
@@ -92,5 +95,4 @@
             </ContentPage>
         </TabbedPage>
     </FlyoutPage.Detail>
-
 </FlyoutPage>

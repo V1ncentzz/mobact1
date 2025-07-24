@@ -7,9 +7,11 @@
             InitializeComponent();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
+
+            protected override Window CreateWindow(IActivationState? activationState)
+            {
+            // loads MainPage as the root page.
             return new Window(new NavigationPage(new MainPage()));
-        }
+            }
     }
 }
